@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Instagram</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <div class="d-flex">
+        <a class="navbar-brand m-0" href="#"><i class="fa-brands fa-instagram"> </i></a>
+        <h5 class="my-auto">Instagram</h5>
+      </div>
+
+      <div class="d-flex">
+        <button type="button" class="btn btn-success ms-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Create a new post
+        </button>
+      </div>
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Create a new post
+              </h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Caption:
+              <div class="input-group">
+                <textarea placeholder="Username" class="form-control" aria-label="With textarea"></textarea>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">
+                Save changes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle bg-secondary" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <i class="fa-solid fa-gear" style="color: #ffffff"></i>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><a class="dropdown-item" href="#">Accessibility</a></li>
+            <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+            <li>
+              <hr class="dropdown-divider" />
+            </li>
+            <li>
+              <a class="dropdown-item" style="color: red" href="#">Log out</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="d-flex">
+    <div class="mx-auto mt-3">
+      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+            type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+            <i class="fa-solid fa-table-cells"></i>
+          </button>
+        </li>
+
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+            type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+            <i class="fa-solid fa-square"></i>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+      tabindex="0">
+      <div class="container text-center">
+        <div class="row align-items-start gx-0">
+          <div class="col">
+            <img src="https://picsum.photos/400/400?random=1" />
+          </div>
+          <div class="col">
+            <img src="https://picsum.photos/400/400?random=2" />
+          </div>
+          <div class="col">
+            <img src="https://picsum.photos/400/400?random=3" />
+          </div>
+        </div>
+      </div>
+      <div class="container text-center mt-4">
+        <div class="row align-items-center">
+          <div class="col">
+            <img src="https://picsum.photos/400/400?random=4" />
+          </div>
+          <div class="col">
+            <img src="https://picsum.photos/400/400?random=5" />
+          </div>
+          <div class="col">
+            <img src="https://picsum.photos/400/400?random=6" />
+          </div>
+        </div>
+      </div>
+      <div class="container text-center mt-4">
+        <div class="row align-items-end">
+          <div class="col">
+            <img src="https://picsum.photos/400/400?random=7" />
+          </div>
+          <div class="col">
+            <img src="https://picsum.photos/400/400?random=8" />
+          </div>
+          <div class="col">
+            <img src="https://picsum.photos/400/400?random=9" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+      <div class="d-flex justify-content-center mb-3">
+        <div class="card" style="width: 25rem">
+          <div class="text-end"> 04/21</div>
+          <h5 class="card-title">Photography is dope!</h5>
+          <img src="https://picsum.photos/600/600?random=2" />
+          <h5 class="card-title">4 likes</h5>
+          <div class="card-body px-0">
+            <p class="card-text">
+            Fell in love with photography since a youngin'!
+            </p>
+          </div>
+          
+        </div>
+      </div>
+      <div class="d-flex justify-content-center mb-3">
+        <div class="card" style="width: 25rem">
+          <div class="text-end"> 04/21</div>
+          <h5 class="card-title">Film enthusiast!</h5>
+          <img src="https://picsum.photos/600/600?random=3"/>
+          <h5 class="card-title">4 likes</h5>
+          <div class="card-body px-0">
+            <p class="card-text">
+            Cinematography is the art of capturing using:
+            Lights are your paint brushes. The canvas is the set!
+            </p>
+          </div>
+        </div> 
+      </div>  
+      <div class="d-flex justify-content-center mb-">
+        <div class="card" style="width: 25rem">
+          <div class="text-end"> 04/21</div>
+          <h5 class="card-title">All you need is a vison and a camera!</h5>
+          <img src="https://picsum.photos/600/600?random=4"/>
+          <h5 class="card-title">4 likes</h5>
+          <div class="card-body px-0">
+            <p class="card-text">
+            F/stops and T/stops = Clarity!
+            </p>
+          </div>
+        </div> 
+      </div>    
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
+
+  <script src="https://kit.fontawesome.com/fc6802bd1b.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
